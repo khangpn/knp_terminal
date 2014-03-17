@@ -1,0 +1,20 @@
+[color]
+    ui = auto
+    diff = false
+[merge]
+    tool = vimdiff
+[diff]
+    tool = vimdiff
+    renames = true
+[core]
+    autocrlf = false
+    excludesfile = ~/.gitignore
+[user]
+	  email = nguyenphuckhang@gmail.com
+	  name = Khang Phuc Nguyen
+[alias]
+    graph = log --oneline --color --graph --decorate
+[push]
+    default = current
+[rerere]
+    enabled = true
