@@ -1,6 +1,14 @@
 " Call Pathogen to load everything
 call pathogen#infect()
 
+function! ToggleCopy()
+  if (&number)
+    set nonumber
+  else
+    set number
+  endif
+endfunction
+
 " Unicode
 set fileencodings=utf8
 
@@ -49,3 +57,25 @@ set ignorecase
 set smartcase
 " Search as typing
 set incsearch
+
+" Search for files
+let g:ctrlp_map = '<leader>f'
+nnoremap <leader>n :NERDTreeFind<cr>
+
+" Ctrl-jklm changes to that split
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
+nnoremap <c-h> <c-w>h
+
+" For easy copying
+nnoremap <leader>c :call ToggleCopy()<cr>
+
+" Quick paste toggle
+nnoremap <leader>p :set paste!<cr>
+
+" Automatically disable paste mode
+au InsertLeave * set nopaste
+
+" Remap jj to escape in insert mode.
+inoremap jj <esc>
