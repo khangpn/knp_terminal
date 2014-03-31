@@ -1,11 +1,22 @@
 " Call Pathogen to load everything
 call pathogen#infect()
 
+" Toggle on/off copy mode
 function! ToggleCopy()
   if (&number)
     set nonumber
   else
     set number
+  endif
+endfunction
+
+syntax manual
+" Toggle on/off colors
+function! ToggleColor()
+  if (&syntax == "OFF")
+    set syntax=ON
+  else
+    set syntax=OFF
   endif
 endfunction
 
@@ -79,3 +90,6 @@ au InsertLeave * set nopaste
 
 " Remap jj to escape in insert mode.
 inoremap jj <esc>
+
+" For plain-text reading
+nnoremap <leader>l :call ToggleColor()<cr>
