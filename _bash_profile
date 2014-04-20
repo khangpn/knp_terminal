@@ -1,0 +1,29 @@
+#!/bin/bash
+
+[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+export NXJ_HOME=/opt/leJOS_NXJ
+export LEJOS_NXT_JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64
+export PATH=/opt/leJOS_NXJ/bin:$PATH
+
+alias ls='ls -AFh --color=auto'
+alias cd='my_cd'
+alias grep='grep --binary-files=without-match --color'
+
+cd_ls() {
+  "cd" "$@" && ls
+}
+
+my_cd() {
+  le_path="$1"
+  if test -f "$le_path"
+  then
+    le_path="$(dirname "$le_path")"
+    echo "$le_path"
+    cd_ls "$le_path"
+    return
+  fi
+  cd_ls "$@"
+}
