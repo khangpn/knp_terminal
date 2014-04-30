@@ -4,9 +4,10 @@
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-export NXJ_HOME=/opt/leJOS_NXJ
-export LEJOS_NXT_JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64
-export PATH=/opt/leJOS_NXJ/bin:$PATH
+export NXJ_HOME=/home/khang/leJOS_NXJ
+export LEJOS_NXT_JAVA_HOME=/home/khang/Downloads/jdk1.7.0_55
+export JAVA_HOME=/home/khang/Downloads/jdk1.7.0_55
+export PATH=$JAVA_HOME/bin:$NXJ_HOME/bin:$PATH
 
 alias ls='ls -AFh --color=auto'
 alias cd='my_cd'
