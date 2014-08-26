@@ -28,3 +28,5 @@ my_cd() {
   fi
   cd_ls "$@"
 }
+
+fortune | cowsay
