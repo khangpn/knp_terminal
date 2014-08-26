@@ -13,7 +13,7 @@ for app in $applications
 do
     if ! type $app > /dev/null; then
         echo "Installing: "$app
-        sudo apt-get install --force-yes $app
+        sudo apt-get install -fy $app
     else
         echo $app" has been installed"
     fi
