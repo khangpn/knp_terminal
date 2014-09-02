@@ -4,3 +4,4 @@ firefox &
 yakuake &
 conky -d
 google-musicmanager &
+skype &

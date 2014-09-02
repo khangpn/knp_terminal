@@ -8,6 +8,7 @@ applications="
   ibus
   ibus-unikey
   curl
+  wallch
 "
 for app in $applications
 do
