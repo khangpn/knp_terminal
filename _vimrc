@@ -34,7 +34,7 @@ syntax on
 :set expandtab "insert space characters whenever the TAB key is pressed
 " Indentation
 :set autoindent
-:set smartindent
+":set smartindent
 :set preserveindent
 
 "" Display options
