@@ -2,13 +2,20 @@
 applications="
   vim
   git
+  ssh
+  ubuntu-restricted-extras
+  samba
+  smbclient
   yakuake
-  cowsay
-  fortune
+  cmus
   ibus
   ibus-unikey
   curl
+  xdotool
+  cowsay
+  fortune
   wallch
+  conky
 "
 for app in $applications
 do
