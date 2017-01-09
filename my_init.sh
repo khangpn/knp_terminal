@@ -10,12 +10,14 @@ applications="
   cmus
   ibus
   ibus-unikey
-  curl
   xdotool
   cowsay
   fortune
   wallch
   conky
+  curl
+  lm-sensors
+  hddtemp
 "
 for app in $applications
 do
