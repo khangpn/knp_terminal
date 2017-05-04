@@ -20,6 +20,7 @@ applications="
   hddtemp
   jq 
   conky
+  synergy
 "
 for app in $applications
 do
