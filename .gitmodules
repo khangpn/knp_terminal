@@ -7,3 +7,15 @@
 [submodule "_vim/bundle/xoria256"]
 	path = _vim/bundle/xoria256
 	url = https://github.com/vim-scripts/xoria256.vim.git
+[submodule "_vim/bundle/vim-jsx"]
+	path = _vim/bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx.git
+[submodule "_vim/bundle/vim-javascript-lib"]
+	path = _vim/bundle/vim-javascript-lib
+	url = https://github.com/crusoexia/vim-javascript-lib.git
+[submodule "_vim/bundle/vim-monokai"]
+	path = _vim/bundle/vim-monokai
+	url = https://github.com/crusoexia/vim-monokai.git
+[submodule "_vim/bundle/vim-javascript"]
+	path = _vim/bundle/vim-javascript
+	url = git@github.com:pangloss/vim-javascript.git

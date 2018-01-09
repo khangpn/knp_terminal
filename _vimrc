@@ -45,7 +45,7 @@ autocmd ColorScheme * highlight NonText ctermbg=None "make remaining lines trans
 " Set vim using as many colors as possible! Without this this will raise 'err: please use GUI or a 256-color terminal (so that t_Co=256 could be set)'
 set t_Co=256
 " Set color scheme
-colorscheme xoria256 "Color scheme should be put under ~/.vim/bundle/xoria256/colors/xoria256.vim
+colorscheme monokai "Color scheme should be put under ~/.vim/bundle/xoria256/colors/xoria256.vim
 " Show the row number
 :set number 
 " Show title
@@ -93,3 +93,9 @@ inoremap jj <esc>
 
 " For plain-text reading
 nnoremap <leader>l :call ToggleColor()<cr>
+
+" vim-javascript configs
+let g:javascript_plugin_jsdoc = 1
+
+" vim-jsx apply for js files too
+let g:jsx_ext_required = 0
