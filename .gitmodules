@@ -18,7 +18,7 @@
 	url = https://github.com/crusoexia/vim-monokai.git
 [submodule "_vim/bundle/vim-javascript"]
 	path = _vim/bundle/vim-javascript
-	url = git@github.com:pangloss/vim-javascript.git
+	url = https://github.com/pangloss/vim-javascript.git
 [submodule "_vim/bundle/auto-pairs"]
 	path = _vim/bundle/auto-pairs
-	url = git://github.com/jiangmiao/auto-pairs.git
+	url = https://github.com/jiangmiao/auto-pairs.git
