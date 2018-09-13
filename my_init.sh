@@ -14,13 +14,15 @@ applications="
   xdotool
   cowsay
   fortune
+  gimp
+  calibre
+  ktorrent
   wallch
   curl
   lm-sensors
   hddtemp
   jq 
   conky
-  synergy
 "
 for app in $applications
 do
