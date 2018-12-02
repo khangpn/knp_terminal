@@ -9,6 +9,7 @@ applications="
   ibus-unikey
   smplayer
   ubuntu-restricted-extras
+  openssh-server
   samba
   smbclient
   xdotool
@@ -16,6 +17,8 @@ applications="
   fortune
   gimp
   calibre
+  gthumb
+  polarr
   ktorrent
   wallch
   curl
@@ -23,6 +26,8 @@ applications="
   hddtemp
   jq 
   conky
+  playonlinux
+  steam
 "
 for app in $applications
 do
